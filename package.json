@@ -1,0 +1,38 @@
+{
+  "name": "dynamicdb",
+  "version": "^1.0.0",
+  "description": "DynamicDB is a database produced using Node.js and stored in BSON format, offering high performance and scalability.",
+  "main": "lib/index.js",
+  "keywords": [
+    "database",
+    "bson",
+    "json",
+    "storage",
+    "data"
+  ],
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "Apache-2.0",
+  "contributors": [],
+  "author": "emptydev1",
+  "repository": "emptydev1/dynamicdb",
+  "bugs": {
+    "url": "https://github.com/emptydev1/dynamicdb/issues"
+  },
+  "engines": {
+    "node": ">=14.20.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "bson": "^5.3.0"
+  },
+  "devDependencies": {}
+}
