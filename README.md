@@ -35,7 +35,7 @@ const db = new BSONDatabase({
 }):
 ```
 
-In these examples we use the BSONDatabase class to create a new database that uses the `./database/data.json` file to store data.
+In these examples we use the BSONDatabase class to create a new database that uses the `./database/data.bson` file to store data.
 
 <h3>Entering data</h3>
 
@@ -88,7 +88,7 @@ db.clear();
 db.close();
 ```
 
-<h1>Contribution guidelines</h1>
+<h1 align="center">Contribution guidelines</h1>
 
 <p>Contributions are always welcome! If you find a bug or would like to suggest a new feature, open an issue at<o> <a href="https://github.com/emptydev1/dynamicdb/issues">GitHub</a></o> . If you would like to contribute to this project, fork the repository and submit a pull request.</p>
 
