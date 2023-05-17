@@ -1,6 +1,6 @@
 {
   "name": "dynamicdb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DynamicDB is a database produced using Node.js and stored in BSON format, offering high performance and scalability.",
   "main": "lib/index.js",
   "keywords": [
