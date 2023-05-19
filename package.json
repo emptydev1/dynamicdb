@@ -1,6 +1,6 @@
 {
   "name": "dynamicdb",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "DynamicDB is a database produced using Node.js and stored in BSON format, offering high performance and scalability.",
   "main": "lib/index.js",
   "keywords": [
@@ -27,11 +27,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lib/index.js",
-    "pretest": "npm run build"
+    "start": "node lib/index.js"
   },
   "dependencies": {
-    "bson": "^5.3.0",
-    "lodash": "^4.17.21"
+    "better-sqlite3": "^7.6.2",
+    "lodash": "^4.17.21",
+    "bson": "^5.3.0"
   }
 }
