@@ -39,7 +39,7 @@ const db = require('dynamicdb').sqlite({
 <h4>Using BSON:</h4>
 
 ```js
-const db = require('dynamicdb').sqlite({
+const db = require('dynamicdb').bson({
   file: './database/data.bson'
 });
 ```
