@@ -1,14 +1,16 @@
 {
   "name": "dynamicdb",
-  "version": "2.0.0",
-  "description": "DynamicDB is a database produced using Node.js and stored in BSON format, offering high performance and scalability.",
+  "version": "2.0.1",
+  "description": "A local database package that has support for SQLite and BSON",
+  "type": "commonjs",
   "main": "lib/index.js",
   "keywords": [
     "database",
     "bson",
-    "json",
+    "sqlite3",
     "storage",
-    "data"
+    "data",
+    "sql"
   ],
   "files": [
     "lib/",
@@ -18,10 +20,14 @@
   "license": "Apache-2.0",
   "contributors": [],
   "author": "emptydev1",
-  "repository": "emptydev1/dynamicdb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emptydev1/dynamicdb"
+  },
   "bugs": {
     "url": "https://github.com/emptydev1/dynamicdb/issues"
   },
+  "homepage": "https://github.com/emptydev1/dynamicdb#README",
   "engines": {
     "node": ">=14.20.1"
   },
