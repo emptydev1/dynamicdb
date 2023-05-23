@@ -18,7 +18,7 @@ db.concat('array', 'item 6', 'item 7', 'item 8')
 db.pull('array', true, (element) => typeof element === 'string' && element.startsWith('item')) // []
 ```
 
-In addition to these methods used to manage arrays in documents, there are others we can use to edit database data.
+There are also some methods that we can use to, for example, filter the database or map it.
 
 ```js
 // Filtering the database values
@@ -28,7 +28,7 @@ db.filter((element) => element.value > 1000) // Array { ... }
 db.map((element) => element.value) // Array { ... }
 
 // Sorting database elements
-db.sort((a, b) => a - b) // Array { ... }
+db.sort((a, b) => b.value - a.value) // Array { ... }
 
 // Executing a function for each document in the database
 db.forEach((element) => {
@@ -36,5 +36,5 @@ db.forEach((element) => {
 })
 
 // Shrinking database documents
-db.reduce((a, b) => a[b.key] = b.value, {})
+db.reduce((a, b) => a.value + b.value, 0)
 ```

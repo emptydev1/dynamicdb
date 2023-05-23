@@ -16,7 +16,7 @@ db.insertMany({
 })
 
 // Getting entered data
-console.log(db.toArray()) // Object { ... }
+console.log(db.toArray()) // Array { ... }
 
 // Clearing all data
 db.clear()

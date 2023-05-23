@@ -1,6 +1,6 @@
 {
   "name": "dynamicdb",
-  "version": "2.0.1",
+  "version": "2.0.13",
   "description": "A local database package that has support for SQLite and BSON",
   "type": "commonjs",
   "main": "lib/index.js",
@@ -32,12 +32,13 @@
     "node": ">=14.20.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lib/index.js"
+    "start": "node lib/index.js",
+    "test": "mocha test/*.js"
   },
   "dependencies": {
     "better-sqlite3": "^7.6.2",
     "bson": "^5.3.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "mocha": "^10.2.0"
   }
 }

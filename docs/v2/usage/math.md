@@ -1,6 +1,6 @@
 # Math
 
-It is possible to use some functions to perform basic mathematical expressions, such as: `math`, `sum`, `sub` and etc...
+It is possible to use some functions to perform basic mathematical expressions
 
 ```js
 // Inserting a new document...

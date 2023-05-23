@@ -16,10 +16,11 @@ db.insertMany({
 
 // Deleting a single document
 db.delete('cat') // true
+db.delete('person.books') // true
 
 // Deleting multiple documents
-db.delete('dog', 'bird') // [ 'dog', 'bird' ]
+db.deleteMany('dog', 'bird', 'non-existent_document') // [ 'dog', 'bird' ]
 
 // Searching and deleting documents
-db.findAndDelete((element) => element.key === 'person' && element.value.name === 'John Doe') // [ { key: 'person', value: { name: 'John Doe', age: 27, books: [ 'Harry Potter' ] } } ]
+db.findAndDelete((element) => element.key === 'person' && element.value.name === 'John Doe') // Array { ... }
 ```
