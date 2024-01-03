@@ -36,7 +36,7 @@ const db = require('dynamicdb').sqlite();
 const db = require('dynamicdb').bson();
 ```
 
-__
+_
 
 ```js
 // Saving a data
